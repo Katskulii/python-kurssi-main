@@ -1,0 +1,8 @@
+name = (input("Anna etunimi: "))
+first_char = name[0]
+surname = (input("Anna sukunimi: ")[::-1])
+
+for i in first_char:
+    print(first_char * (len(name)))    
+
+print(surname)

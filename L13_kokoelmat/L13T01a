@@ -1,0 +1,15 @@
+# Tehdään ohjelma, joka kysyy käyttäjältä rekisterinumeroita ja lisää ne listaan. Syötetyt rekisterinumerot näytetään aakkosjärjestyksessä.
+
+# Luodaan tyhjä lista.
+lista = []
+
+# Kysytään rekisterinumeroita ja tehdään silmukka, joka katkeaa, kun tulee tyhjä syöte. Lisätään listaan.
+while True:
+    rekkarit = input("Anna rekisterinumero : ")
+    if rekkarit == "":
+        break
+    lista.append(rekkarit)
+
+# Järjestetään aakkosjärjestykseen.    
+lista.sort()
+print(lista)

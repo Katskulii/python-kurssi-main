@@ -1,0 +1,11 @@
+sekunteina = 15549
+
+def time(sekunteina):
+    aika_sekunteina = sekunteina
+    h = aika_sekunteina / 3600
+    jaa = aika_sekunteina % 3600
+    min = jaa / 60
+    sek = jaa % 60
+    return "%02d:%02d:%02d" % (h, min, sek)
+
+print(time(sekunteina))    

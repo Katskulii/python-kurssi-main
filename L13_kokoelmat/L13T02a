@@ -1,0 +1,19 @@
+# Ohjelma kysyy käyttäjältä arvosanoja, kunnes tulee tyhjä syöte. Arvosanat tallennetaan listaan, ohjelma laskee montako syötettä on annettu ja niistä lasketaan keskiarvo.
+
+# Määritellään tyhjä lista, annettujen arvosanojen määrä ja arvo.
+lista = []
+lukuja = 0
+maara = 0
+
+# Tehdään silmukka, joka kysyy arvosanoja ja tallentaa ne listaan.
+while True:
+    arvosana = (input("Anna arvosana: "))
+    if arvosana == "":
+        break
+    lista.append(arvosana)
+    # Montako syötettä on annettu ja arvot.
+    lukuja += int(arvosana)
+    maara += 1
+
+print("Arvosanoja annettu: ", maara)
+print("Arvosanojen keskiarvo on: ", lukuja / maara)

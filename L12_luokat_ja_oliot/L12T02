@@ -1,0 +1,33 @@
+# Tehdään luokka Cat ja annetaan sille ominaisuudet ja tiedot.
+class Cat:
+    name = ""
+    color = ""
+    voice = ""
+
+    def nayta(self):
+        tulos = self.name + "," + " " + "color: " + self.color
+        return tulos
+
+    def miau(self):
+        nayta = self.name + " " + "says: " + self.voice
+        return nayta   
+
+# Luodaan ensimmäinen olio.        
+kissa = Cat()
+kissa.name = "Kit"
+kissa.color = "black"
+kissa.voice = "Meoooow!"
+
+# Luodaan toinen olio.
+kissa2 = Cat()
+kissa2.name = "Kat"
+kissa2.color = "white"
+kissa2.voice = "Meoooow!"
+
+# Tulostetaan kissojen tiedot.
+print(kissa.nayta())
+print(kissa2.nayta())
+
+# Tulostetaan mitä kissat sanoo.
+print(kissa.miau())
+print(kissa2.miau())

@@ -1,0 +1,21 @@
+import random
+
+# Määritellään lista ja while silmukkaa käyttäen ohjelma arpoo 7 satunnaista numeroa 1 ja 40 väliltä.
+def lotto():
+    numerot = [] * 7
+    luku = random.randint(1, 40)
+    numerot.insert(7, str(luku))
+
+    i = 6
+    while i > 0:
+        luku = random.randint(1, 40)
+        if str(luku) in numerot:
+            continue
+        numerot.insert(i, str(luku))
+        i -= 1
+
+    return numerot
+
+printtaa = (lotto())
+
+print(printtaa[0]+","+printtaa[1]+","+printtaa[2]+","+printtaa[3]+","+printtaa[4]+","+printtaa[5]+","+printtaa[6])

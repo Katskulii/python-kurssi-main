@@ -1,0 +1,8 @@
+list = []
+
+for n in range(5):
+    arvo = int(input("Anna pisteet:"))
+    list.append(arvo)
+
+list.sort()    
+print("Pisteet yhteensä: ", (list[1] + list[2] + list[3]))

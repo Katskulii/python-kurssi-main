@@ -1,0 +1,12 @@
+names_count = 0
+lista = []
+while True:
+    new_name = input("Enter student name: ")
+
+    if new_name == "":
+        break
+    names_count += 1
+    lista.append(new_name)
+
+print(f"Student count: {names_count}")
+print(", ".join(lista))

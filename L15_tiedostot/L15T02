@@ -1,0 +1,48 @@
+# Luodaan editorilla tiedosto 'nimet.txt', johon lisätään 10 naisten ja 10 miesten nimeä. Tehdään ohjelma, joka lukee tiedostosta nimet, montako nimeä on 
+# kirjoitettu ja montako kertaa kukin nimi esiintyy.
+import os.path
+import datetime
+from collections import Counter
+from unicodedata import name
+
+mypath = os.path.expanduser("~")
+filename = "\\nimet.txt"
+
+# Avataan tiedosto ja tulostetaan nimet. Poikkeusten varalle(esim.jos tiedostoa ei ole tai ei saada yhteyttä) try - except.
+try:
+    with open(mypath + filename, "r") as file:
+        for name in file:
+            sisalto = file.read()
+            print(sisalto)
+except:
+    print("Ei löytynyt.")            
+
+# Lasketaan montako nimeä on tiedostossa ja tulostetaan tulos. Try - except siltä varalta, että tiedostoa ei löydy tai jokin muu menee pieleen.
+try:
+    with open(mypath + filename, "r") as file:
+        count = 0
+        for name in file:
+            count += 1
+        print("Nimiä on listassa ", count)
+except:
+    print("Ei löytynyt.")  
+
+# Alustetaan lista.
+nimet = []
+
+# Lisätään nimet listaan. Try - except siltä varalta, että tiedostoa ei löydy tai jokin muu menee pieleen.
+try:
+    with open(mypath + filename, 'r') as fp:
+        for line in fp:
+            if line != '\n':
+             nimet.append(line.rstrip())
+except:
+    print("Ei löytynyt.")                
+
+# Tehdään dictionary nimilistasta.
+cnt = Counter(nimet)
+
+# Tulostetaan avain - arvopari
+for k, v in cnt.items():
+    print("Nimi "+ k + " esiintyy " + str(v) + " kertaa.")
+       

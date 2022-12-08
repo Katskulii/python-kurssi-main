@@ -1,0 +1,9 @@
+# Tehdään ohjelma joka kysyy käyttäjältä kaksi kokonaislukua ja tulostaa niiden summan.
+# number1 = 3
+# number2 = 5
+
+number1 = int(input("Anna kokonaisluku: "))
+number2 = int(input("Anna toinen kokonaisluku: "))
+
+tulos = number1 + number2
+print("Summa: ", tulos)

@@ -1,0 +1,16 @@
+print("Here starts basics of programming with Python")
+
+name = "Kati"
+lastname = "Tuunainen"
+
+fullname = name + " " + lastname
+print(fullname)
+
+
+# """
+# name = "Kati Tuunainen"
+# print(name)
+
+# Eikö näin saisi nimeä esittää? Tuohonkin tulee välilyönti.
+
+# """

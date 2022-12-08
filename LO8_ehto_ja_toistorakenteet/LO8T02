@@ -1,0 +1,6 @@
+# Ohjelma tulostaa annetuista luvuista suurimman.
+number = int(input("Anna luku: "))
+number2 = int(input("Anna toinen luku: "))
+number3 = int(input("Vielä yksi: "))
+
+print("Luvuista suurin on: ", max(number, number2, number3))

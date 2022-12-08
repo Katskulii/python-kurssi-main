@@ -1,0 +1,23 @@
+# Tehdään ohjelma , jolla yritetään lukea kaikki tiedostot C:n juuresta ja näytetään tiedot konsolilla.
+import os.path
+import datetime
+from os import walk
+
+# kansion polku
+dir_path = r'C:\\'
+
+# Talteen tähän listaan.
+
+dir_lista = os.listdir(dir_path)
+print(dir_lista)
+
+# Yritin luoda tiedoston 'ayho.txt' ilman "try - exept" poikkeuksen käsittelijää , mutta sain Permission Errorin, jonka jälkeen lisäsin poikkeuksen käsittelijän. 
+try:
+    file_path = r'C:\\ayho.txt'
+    with open(file_path, "w") as fp:
+        fp.write("Koitetaas..")
+
+except PermissionError:
+    print("Soosoo, ei lupaa!")
+
+# BONUSKYSYMYS: Root (käyttäjällä) oikeuksilla voi lisätä tiedostoja juurihakemistoon.

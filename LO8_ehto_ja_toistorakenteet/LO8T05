@@ -1,0 +1,23 @@
+# Ohjelma laskee konsolille syötettyjen viiden numeron summan, poislukien negatiiviset luvut ja nollan.
+number = int(input("Anna luku: "))
+number2 = int(input("Anna luku: "))
+number3 = int(input("Anna luku: "))
+number4 = int(input("Anna luku: "))
+number5 = int(input("Anna luku: "))
+
+if number < 0:
+    number = 0
+
+if number2 < 0:
+    number2 = 0
+
+if number3 < 0:
+    number3 = 0
+
+if number4 < 0:
+    number4 = 0
+
+if number5 < 0:
+    number5 = 0 
+
+print("Summa on: ", number + number2 + number3 + number4 + number5)         

@@ -1,0 +1,18 @@
+# VASTAUS: Huomasin, että saan aikaiseksi NameErrorin, jos ei laita lainausmerkkejä merkkijonoon ja lainausmerkkien kanssa TypeError. Ilman try - except käsittelyä
+# merkkijonon antamisen jälkeen tulee paljon enemmän tekstiä ja TypeError("Virhe!")
+
+# Tehdään funktio, joka palauttaa true, jos parametrin arvo on 0 ja false jos jokin muu int tai float luku. Jos parametriksi annetaan merkkijono(myös luku, esim "5"),
+# tulkitaan se exeptioniksi.
+
+def isthiszero(num):
+    if num == 0:
+        return True
+    elif isinstance(num, int) or isinstance(num, float):
+        return False
+    else:
+        raise TypeError("Virhe!") 
+
+try:
+    print(isthiszero(2))  
+except:
+    print("Anna parametriksi jokin luku")

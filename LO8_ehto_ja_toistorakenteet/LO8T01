@@ -1,0 +1,11 @@
+# Ohjelma kertoo konsolille syötetyn iän mukaan onko kyseessä lapsi, teini, aikuinen vai seniori.
+number = int(input("Anna ikä: "))
+
+if number <= 12:
+    print("Child")
+elif number <= 19:
+    print("Teen")
+elif number <= 65:
+    print("Adult")
+else:
+    print("Senior")        

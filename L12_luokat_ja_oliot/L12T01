@@ -1,0 +1,22 @@
+# Tehdään luokka Human.
+class Human:
+    name = ""
+    age = 0
+
+    def show_info(self):
+        tiedot = "Nimi: "+ self.name + ", " + "Ikä: "+ str(self.age)
+        return tiedot
+
+# Määritellään ihmisen ikä ja nimi.
+ihminen = Human()
+ihminen.name = "Adam"
+ihminen.age = 18
+
+# Määritellään toisen ihmisen ikä ja nimi.
+ihminen2 = Human()
+ihminen2.name = "Eva"
+ihminen2.age = 18
+
+# Tulostetaan ihmiset.
+print(ihminen.show_info())
+print(ihminen2.show_info())

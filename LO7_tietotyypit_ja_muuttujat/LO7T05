@@ -1,0 +1,16 @@
+# Asetetaan muuttujaan pankkitilin saldo.
+saldo = 2000
+euro = "€"
+print("Bank account balance: ", saldo, euro)
+
+# Kysytään konsolissa montako euroa lisätään.
+line = input("How many euros will be added to bank account? ")
+number = int(line)
+
+# Kysytään konsolissa montako senttiä lisätään.
+line2 = float(input("How many cents will be added to bank account? "))    
+number2 = float(line2 / 100.0)
+
+# Tulostetaan lopullinen saldo.
+tulos = saldo + number + number2
+print(f"Bank account balance is:  {tulos:.2f}", euro)

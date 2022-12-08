@@ -1,0 +1,14 @@
+# Alustetaan lista, jossa on neljä alkiota.
+lista = [2, 4, 6, 8]
+print(lista)
+
+# Yritän muuttaa viidettä alkiota, jota ei ole. Saadaan-> IndexError: list assignment index out of range. 
+#lista[5] = 12
+#print(lista)
+
+# Tehdään ohjelma sen sijaan try - except poikkeuksen käsittelyllä, jos yritetään muuttaa vahingossa väärää alkiota.
+try:
+    lista[4] = 12
+    print(lista)
+except IndexError:
+    print("Alkiota ei löytynyt!")

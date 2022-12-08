@@ -1,0 +1,2 @@
+pituus = "174"
+print(pituus)

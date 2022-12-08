@@ -1,0 +1,7 @@
+# Tehdään ohjelma joka näyttää onko vuosi karkausvuosi vai ei.
+luku = int(input("Anna vuosiluku: "))
+
+if luku % 4 == 0 and (luku % 100 != 0 or luku == 0):
+    print("Tämä vuosi on karkausvuosi!")
+else:
+    print("Tämä vuosi ei ole karkausvuosi!")

@@ -1,0 +1,10 @@
+# Tein tehtävän 2 mukaan funktion, jossa saadaan tulokseksi kahden parametrina annetun luvun erotus.
+
+number1 = 5
+number2 = 2
+
+def subtract(number1, number2):
+    tulos = number1 - number2
+    print(tulos)
+    
+subtract(number1, number2)

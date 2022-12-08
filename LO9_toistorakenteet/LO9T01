@@ -1,0 +1,6 @@
+smaara = int(0)
+for i in range(7):
+    maara = int(input("Paljonko satoi: "))
+    smaara = smaara + maara
+
+print("Yhteensä satoi: ", smaara)    

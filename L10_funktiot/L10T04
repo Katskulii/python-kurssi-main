@@ -1,0 +1,15 @@
+# Tehdään funktio joka ottaa kolme parametria, laskee kuinka monta litraa bensaa meni ja paljonko bensa maksoi.
+
+matka = float(input("Kuinka pitkä matka on kilometreinä:"))
+bensan_hinta = float(input("Paljonko bensa maksaa:"))
+keskikulutus = float(input("Paljonko on keskikulutus / 100 km:"))
+
+def calc_consumption(matka, bensan_hinta, keskikulutus):
+    kulutus = ((keskikulutus / 100) * matka)
+    maksoi = (((keskikulutus / 100) * matka) * bensan_hinta)
+    
+    print("Bensaa kului: ","{:.2f}".format(kulutus) , "litraa")
+
+    print("Rahaa kului: ", "{:.2f}".format(maksoi), "€")
+
+calc_consumption(matka, bensan_hinta, keskikulutus)

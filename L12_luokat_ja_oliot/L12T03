@@ -1,0 +1,30 @@
+# Tehdään luokka -Car ja annetaan sille kolme ominaisuutta
+class Car:
+    brand = ""
+    model = ""
+    price = 0
+
+    def __str__(self):
+        tul = self.brand + " " + self.model + " " + str(self.price)
+        return tul
+
+auto = Car()
+auto.brand = "Skoda"
+auto.model = "Octavia"
+auto.price = 3000  
+
+auto2 = Car()
+auto2.brand = "Audi"
+auto2.model = "A4"
+auto2.price = 4000  
+
+auto3 = Car()
+auto3.brand = "Volvo"
+auto3.model = "V70"
+auto3.price = 5000
+
+print("car1: ", auto)
+print("car2: ", auto2)
+print("car3: ", auto3)
+
+print("Total price of the cars is ", (auto.price) + (auto2.price) + (auto3.price))

@@ -1,0 +1,18 @@
+# Tehdään ohjelma, joka kysyy käyttäjältä kaksi kokonaislukua ja tulostaa niiden summan, erotuksen, tulon ja osamäärän.
+
+number3 = int(input("Anna kokonaisluku: "))
+number4 = int(input("Anna toinen kokonaisluku: "))
+
+tulos = number3 + number4
+print("Summa: ", tulos)
+
+erotus = number3 - number4
+print("Erotus: ", erotus)
+
+tulo = number3 * number4
+print("Tulo: ", tulo)
+
+osamaara = number3 / number4
+print("Osamäärä: ", osamaara)
+
+

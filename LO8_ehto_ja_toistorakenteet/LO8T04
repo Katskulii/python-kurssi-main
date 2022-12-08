@@ -1,0 +1,16 @@
+# Ohjelma kertoo arvosanan konsolille syötettyjen pisteiden mukaan.
+number = int(input("Anna pistemäärä: "))
+
+if number <= 1:
+    print("Arvosana: 0")
+elif number <= 3:
+    print("Arvosana: 1")
+elif number <= 5:
+    print("Arvosana: 2")
+elif number <= 7:
+    print("Arvosana: 3")
+elif number <=9:
+    print("Arvosana: 4")
+elif number <= 12:
+    print("Arvosana: 5")
+                            

@@ -1,0 +1,12 @@
+lukuja = 0
+summa = 0
+
+while True:
+    input1 = (input("Anna luku(enter lopettaa pelin): "))
+    if input1 == "":
+        break
+    summa += int(input1)
+    lukuja += 1
+
+print("Lukuja annettu: " , lukuja)
+print("Lukujen summa: " , summa)    
